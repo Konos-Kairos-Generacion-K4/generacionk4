@@ -26,34 +26,6 @@ console.log(obj1.a, obj2.a); // 6 6
 
 console.log('******************* variables ***************')
 
-/* 
-El motor de JS hace primero una lectura y allí donde encuentra una var, let o const (y funciones) le asigna un espacio de memoria.
-
-
-
-1º Declaración:    (let a)     >>>> Esto lo hace el motor de JS en una primera lectura (asignación de memorias)  
-
-2º Inicialización: (undefined) >>>> Asignación valor undefined.
-
-3º Asignación:     (a = 3)     >>>> Asignación valor que le pongas.
-
-
-
--- VAR Hoisting --
-: único para variables tipo VAR. Donde se Declara e inicializa en el mismo scope >> en la prelectura inicial hace ambas.
-: es decir, que en esa primera pre-lectura  le asigna memoria + un valor undefined a las VAR.
-
-
--- LET, CONST y CLASS -- : 
-Hoisting NO funciona para LET, CONST y CLASS ya que el scope de estos desacopla: declaración e inicialización en DOS partes.
-: Por eso primero se declara (asignación de memoria), luego en el segundo ciclo se inicializa (le da valor undefined) y luego pasaría 
-: a la asignación su la hubiera.
-
-Como vemos existe un momento en el que está declarada (memoria) pero no inicializada (no tiene valor asignado).
-A este momento se le conoce como la TDZ (The Dead Zone).
-
-*/
-
 
 /*VAR*/
 console.log(`valor de var a (declarado e inicializado): ${testA}`); // undefined - la declaración e inicialización se ha hecho al arrancar)
