@@ -1,7 +1,6 @@
 console.log('******************* Old School ***************')
 /*
 Antes de que se usaran las clases se hacia con funciones y la palabra prototype
-
 */
 
 var Vehiculo2 = function(numRuedas, motor, color) {

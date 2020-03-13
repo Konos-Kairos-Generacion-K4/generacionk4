@@ -21,6 +21,7 @@ class Vehiculo {
 /********************** CLASES ***********************/
 class Coche extends Vehiculo {
     constructor() {
+        super(); // Permite usar las propriedades y/o métodos de la clase padre.
         this.numRuedas = 4
         this.dvd = true;
     }
@@ -37,7 +38,12 @@ class Coche extends Vehiculo {
     }
 }
 
-class Moto extends Vehiculo {}
+class Moto extends Vehiculo {
+    constructor () {  //
+    super();
+    this.airbag = true;
+    }
+}
 
 /********************** SUB-CLASE ***********************/
 class Mercedes extends Coche {
@@ -56,11 +62,18 @@ console.log(vehiculo1);
 console.log(vehiculo1.numRuedas);
 
 
-/* 
+
 console.log('***************coche1***');
 const coche1 = new Coche(4, "v8", "amarillo");
 console.log(coche1);
-console.log(coche1.numRuedas); */
+console.log(coche1.numRuedas); 
+
+
+
+console.log('***************moto***');
+const moto1 = new Moto(4, "v8", "amarillo");
+console.log(moto1);
+console.log(moto1.airbag); 
 
 
 /* console.log('***************Mercedes1***');
